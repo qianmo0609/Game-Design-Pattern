@@ -232,6 +232,13 @@
     <Compile Include="Assets\3rd\DesignPatternExample\Observer\Observer.cs" />
     <Compile Include="Assets\3rd\P-BaseDefenseAssets\GameCode\Stage\StageScore\IStageScore.cs" />
     <Compile Include="Assets\3rd\P-BaseDefenseAssets\GameCode\Character\Script\EffectDelete.cs" />
+    <Compile Include="Assets\Scripts\FacadePattern\AppFacade.cs" />
+    <Compile Include="Assets\Scripts\SingletonPattern\MonoSingleton.cs" />
+    <Compile Include="Assets\Scripts\SingletonPattern\Singleton.cs" />
+    <Compile Include="Assets\Scripts\MediatorPattern\MediatorPattern.cs" />
+    <Compile Include="Assets\Scripts\BridgePattern\BridgePattern.cs" />
+    <Compile Include="Assets\Scripts\StrategyPattern\StrategyPattern.cs" />
+    <Compile Include="Assets\Scripts\TemplateMethodPattern\TemplateMethodPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
