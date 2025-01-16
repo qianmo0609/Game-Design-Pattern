@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GamePattern;
 
 public class TemplateMethodPattern : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        SubClass1 subClass1 = new SubClass1();
+        subClass1.TemplateMethod();
+        SubClass2 subClass2 = new SubClass2();  
+        subClass2.TemplateMethod();
     }
 }
 
@@ -42,6 +40,32 @@ namespace GamePattern
         public void PrimitiveMethod2()
         {
             Debug.Log("PrimitiveMethod2");
+        }
+    }
+
+    public class SubClass1 : TemplateMethodClass
+    {
+        protected override void PrimitiveOperation1()
+        {
+            Debug.Log("SubClass1 PrimitiveOperation1");
+        }
+
+        protected override void PrimitiveOperation2()
+        {
+            Debug.Log("SubClass1 PrimitiveOperation2");
+        }
+    }
+
+    public class SubClass2 : TemplateMethodClass
+    {
+        protected override void PrimitiveOperation1()
+        {
+            Debug.Log("SubClass2 PrimitiveOperation1");
+        }
+
+        protected override void PrimitiveOperation2()
+        {
+            Debug.Log("SubClass2 PrimitiveOperation1");
         }
     }
 }
